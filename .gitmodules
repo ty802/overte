@@ -1,0 +1,3 @@
+[submodule "tools/jsdoc/@overte/types"]
+	path = tools/jsdoc/@overte/types
+	url = git@github.com:ty802/overte-typedefs/
