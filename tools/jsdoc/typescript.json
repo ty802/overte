@@ -1,6 +1,6 @@
 {
     "opts": {
-        "template": ".\\node_modules\\tsd-jsdoc\\dist"
+        "template": "./node_modules/tsd-jsdoc/dist"
     },
     "deploy": {
         "root": "https://apidocs.overte.org/"
