@@ -12,7 +12,7 @@
     "tsd-jsdoc": "github:ty802/overte-tsd-jsdoc"
   },
   "scripts": {
-    "maketypes":"jsdoc root.js -c typescript.json -d @overte/types"  
+    "maketypes":"jsdoc root.js -c typescript.json -d NPMPackage"  
   },
   "private": true
 }
