@@ -60,7 +60,10 @@ endif()
             self.path = args.vcpkg_root
             self.noClean = True
         else:
-            defaultBasePath = os.path.expanduser('~/overte-files/vcpkg')
+            if "OVERTE_OVERRIDE_DEPENDENCY_BASE_PATH" in os.environ:
+                defaultBasePath = os.path.join(os.environ["OVERTE_OVERRIDE_DEPENDENCY_BASE_PATH"], 'vcpkg')
+            else:
+                defaultBasePath = os.path.expanduser('~/overte-files/vcpkg')
             if 'CI_WORKSPACE' in os.environ:
                 self.basePath = os.path.join(os.getenv('CI_WORKSPACE'), 'overte-files/vcpkg')
             else:
